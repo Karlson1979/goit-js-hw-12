@@ -2,17 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-b3d1a2ef.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-0c9b5a0e.css">
   </head>
   <body>
 
 
-    
+
+    <form class="form">
+      <input type="text" name="search" placeholder="Search images" />
+      <button type="submit">Search</button>
+    </form>
+
+    <section class="js-section">
+      <div class="loader"></div>
+      <ul class="nav-list gallery"></ul>
+    </section>
+
+
 
     
   </body>

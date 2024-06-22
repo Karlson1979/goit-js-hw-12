@@ -1,4 +1,7 @@
 
+
+
+
 export function gallery(images) {
   return images
     .map(
@@ -26,3 +29,4 @@ export function gallery(images) {
     )
     .join('');
 }
+

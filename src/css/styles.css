@@ -40,10 +40,20 @@
 
 .statistic span {
   font-weight: bold;
-  display: block; 
+  display: block;
 }
 a{
   text-decoration: none;
   color: black;
 }
+footer{
+  display: flex;
+  justify-content: center;
+
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
 

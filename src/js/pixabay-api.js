@@ -1,7 +1,8 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 
-export async function getImg(query) {
+export async function getImg(query, currentPage) {
+
   const BASE_URL = 'https://pixabay.com';
   const END_POINT = '/api/';
   const url = `${BASE_URL}${END_POINT}`;
@@ -12,6 +13,8 @@ export async function getImg(query) {
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: true,
+      page:currentPage,
+      per_page:15
     }),
   };
   try {
@@ -23,6 +26,6 @@ export async function getImg(query) {
       message: 'Please enter a search term',
       position: 'topRight',
     });
-    throw error; 
+    throw error;
   }
 };
